@@ -21,26 +21,15 @@ Some credit should be given to [spree-facebox](github.com/3months/spree-facebox)
 
 # Customization
 
-None yet. You'll have to do it manually.
+See `views/products/_image.html.erb`, copy that into your directory and customize the parameters in the :rel html tag
 
 See the example page from the plugin creator to see what can be customized.
  [cloud-zoom-integration](http://www.professorcloud.com/mainsite/cloud-zoom-integration.htm)
 
-Example
-=======
+You can also customize the css file `public/stylesheets/cloud-zoom.css` to your liking.
 
-Example goes here.
+# Example
 
-#Resizing existing images
-
-**Resize only 'Image' images**: `rake paperclip:refresh:thumbnails CLASS=Image` 
-
-**Resize a selection of Product images**:
-
-* Jump into a console and grab a selection of Products whose images you want to resize (using Array.select, or AR finders, etc).
-
-	`[collection].each { |product| product.images.each { |image| image.reprocess! }}`
-
-
+	
 
 Copyright (c) 2011 Vincent Charles, released under the New BSD License

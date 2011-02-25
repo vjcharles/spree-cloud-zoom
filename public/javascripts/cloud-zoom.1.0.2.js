@@ -5,11 +5,13 @@
 //
 // Please retain this copyright header in all versions of the software
 //////////////////////////////////////////////////////////////////////////////////
-(function ($) {
+// Minimal changes by Vincent Charles for Spree extension integration 2011
 
-    $(document).ready(function () {
-        $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
-    });
+(function ($) {
+    // //called by Spree hook
+    // $(document).ready(function () {
+    //     $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
+    // });
 
     function format(str) {
         for (var i = 1; i < arguments.length; i++) {
@@ -29,7 +31,7 @@
 		var	softFocus = null;
 		var	$ie6Fix = null;
 		var	zoomImage;
-        var controlTimer = 0;      
+        var controlTimer = 0;
         var cw, ch;
         var destU = 0;
 		var	destV = 0;

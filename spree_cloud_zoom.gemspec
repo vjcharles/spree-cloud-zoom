@@ -2,13 +2,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_cloud_zoom'
   s.version     = '0.0.0'
-  s.summary     = 'Add gem summary here'
-  #s.description = 'Add (optional) gem description here'
+  s.summary     = 'Detailed view of product images through the use of the jQuery plugin Cloud Zoom'
+  s.description = 'Detailed view of product images through the use of the jQuery plugin Cloud Zoom'
   s.required_ruby_version = '>= 1.8.7'
 
-  # s.author            = 'Vincent Charles'
-  # s.email             = ''
-  # s.homepage          = 'http://www...org'
+  s.authors            = ['Vincent Charles', 'R Cecco']
+  s.email             = 'code@vincentcharles.com'
+  s.homepage          = 'http://github.com/vjcharles/spree-cloud-zoom'
   # s.rubyforge_project = ''
 
   s.files        = Dir['CHANGELOG', 'README.md', 'LICENSE', 'lib/**/*', 'app/**/*']

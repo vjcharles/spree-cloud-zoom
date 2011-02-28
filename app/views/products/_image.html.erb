@@ -2,5 +2,5 @@
   <%= image_tag image.attachment.url(:product) %>
 <% else %>
   <%#= product_image(@product) %>
-  <%= link_to(product_image(@product), @product.images.first.attachment.url(:large), {:class => 'cloud-zoom', :id => 'zoom1', :rel=>"position: 'inside'"}) %>
+  <%= @product.images.blank? ? product_image(@product) : link_to(product_image(@product), @product.images.first.attachment.url(:large), {:class => 'cloud-zoom', :id => 'zoom1', :rel=>"adjustX: 20, adjustY: 20"} ) %>
 <% end %>
